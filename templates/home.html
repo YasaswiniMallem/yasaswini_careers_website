@@ -16,19 +16,19 @@
   </head> 
     <body>
       {% include 'nav.html' %}
-      <img class="img-fluid" id= banner1 src = "https://8f4537b0-3469-4072-96a4-16c3b3c880d9-00-n9nqtldvjash.sisko.replit.dev/static/banner1.jpg" height= "320">
+      <img class="img-fluid" id= "banner1" src = "https://8f4537b0-3469-4072-96a4-16c3b3c880d9-00-n9nqtldvjash.sisko.replit.dev/static/banner3.jpg">
       <div class = "container">
-      <h1 class = "text-center mt-2 mt-4">{{company_name}} careers</h1> 
+      <h1 class = "text-center mt-2 mb-4">{{company_name}} careers</h1> 
       
       <div class="row" style="margin-bottom:16px;">
         <div class="col-md-6">
       <p class="lead">Explore remote friendly, flexible job opportunities and join our mission to make work life simple, better and productive. we're building a culture where amazing people like you can do their best work. if you are ready to grow your career and help millions of organizations grow better, you've come to the right place. </p>
         </div>
-        <div class="d none d-md-block col-md-6">
+        <div class="d-none d-md-block col-md-6">
         <img src = "/static/people.jpg" style="height:320px;border-radius:4px;">
         </div>
       </div>
-      <h2 class = "text-center mt-2 mt4">Job openings</h2>
+      <h2 class = "text-center mt-2 mb-4">Job openings</h2>
       <div>
         {% for job in jobs %}
          {% include 'jobitem.html' %}
